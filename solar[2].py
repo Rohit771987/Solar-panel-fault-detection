@@ -11,11 +11,9 @@ from tensorflow.keras import preprocessing
 from keras.models import load_model
 from tensorflow.keras.activations import softmax
 import os
-import random
 from keras.preprocessing.image import load_img
 import warnings
 warnings.filterwarnings('ignore')
-import h5py
 
 model = tf.keras.models.load_model('SolarPanelFaultDetection.h5')
 
