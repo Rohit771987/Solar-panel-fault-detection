@@ -5,22 +5,17 @@ from tensorflow.keras.applications import imagenet_utils
 from keras.preprocessing import image
 import numpy as np
 import cv2
-from IPython.display import Image, display
-from PIL import Image, ImageOps
-import matplotlib.pyplot as plt 
+from PIL import Image, ImageOps 
 import tensorflow as hub
 from tensorflow.keras import preprocessing
 from keras.models import load_model
 from tensorflow.keras.activations import softmax
 import os
-import pandas as pd
 import random
 from keras.preprocessing.image import load_img
-import seaborn as sns
 import warnings
 warnings.filterwarnings('ignore')
 import h5py
-from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, preprocess_input as mobilenet_v2_preprocess_input
 
 model = tf.keras.models.load_model('SolarPanelFaultDetection.h5')
 
