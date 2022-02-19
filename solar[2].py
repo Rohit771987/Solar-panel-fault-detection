@@ -24,7 +24,7 @@ from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, preprocess_i
 
 model = tf.keras.models.load_model('SolarPanelFaultDetection.h5')
 
-def file_selector(folder_path=r'C:\Users\Solan\OneDrive\Desktop\Rohit Ghadage\Project Dataa science\Solar panel fault detection\dataset1\test_set'):
+def file_selector(folder_path= 'Testing'):
     filenames = os.listdir(folder_path)
     selected_filename = st.selectbox('Select a file', filenames)
     return os.path.join(folder_path, selected_filename)
